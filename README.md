@@ -1,46 +1,70 @@
-# Getting Started with Create React App
+# نمونه پروژه React با کامپوننت لودینگ پیشرفته
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+این پروژه یک نمونه ساده و مدرن از یک اپلیکیشن React است که تمرکز اصلی آن بر روی پیاده‌سازی یک کامپوننت لودینگ (Loading) حرفه‌ای و قابل استفاده مجدد می‌باشد. این پروژه برای آموزش مفاهیم پایه و پیشرفته React و همچنین نمایش بهترین شیوه‌های طراحی کامپوننت‌ها و استایل‌دهی با CSS مناسب دانشجویان و علاقه‌مندان توسعه وب است.
 
-## Available Scripts
+## ویژگی‌ها
 
-In the project directory, you can run:
+-   کامپوننت لودینگ با طراحی مدرن و انیمیشن
+-   استفاده از CSS پیشرفته و متغیرهای CSS
+-   ساختار ماژولار و قابل استفاده مجدد
+-   ریسپانسیو و سازگار با موبایل
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## نصب پروژه کامل
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+۱. ابتدا Node.js را نصب کنید (در صورت نیاز).
 
-### `npm test`
+۲. سپس در ترمینال دستور زیر را اجرا کنید:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm install
+```
 
-### `npm run build`
+۳. برای اجرای پروژه:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## استفاده فقط از کامپوننت لودینگ
 
-### `npm run eject`
+برای استفاده از کامپوننت لودینگ در پروژه خودتان:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+۱. فایل‌های زیر را از مسیر `src/components/loading/` به پروژه خود اضافه کنید:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   `index.tsx`
+-   `loader.tsx`
+-   `index.css`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+۲. سپس در هر کامپوننتی که نیاز به لودینگ دارید، به شکل زیر استفاده کنید:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```jsx
+import Loading from "./components/loading";
 
-## Learn More
+function MyComponent() {
+    return (
+        <div>
+            {/* سایر محتوا */}
+            <Loading />
+        </div>
+    );
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+۳. فراموش نکنید فایل `index.css` مربوط به لودینگ را نیز در پروژه خود ایمپورت کنید:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```js
+import "./components/loading/index.css";
+```
+
+---
+
+## توضیحات بیشتر
+
+-   این پروژه برای آموزش و نمایش ساختار صحیح پروژه‌های React و کامپوننت‌نویسی مدرن تهیه شده است.
+-   می‌توانید کامپوننت لودینگ را به راحتی در هر پروژه React دیگر استفاده کنید.
+
+در صورت وجود هرگونه سوال یا نیاز به راهنمایی بیشتر، خوشحال می‌شوم راهنمایی کنم.
