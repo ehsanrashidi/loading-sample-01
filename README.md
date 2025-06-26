@@ -11,6 +11,17 @@
 
 ---
 
+## اطلاعات تماس
+
+-   **نام:** احسان رشیدی
+-   **تلفن:** [+98 913 456 2731](tel:+989134562731)
+-   **ایمیل:** [info@ehsanrashidi.ir](mailto:info@ehsanrashidi.ir)
+-   **گیت‌هاب:** [github.com/ehsanrashidi](https://github.com/ehsanrashidi)
+-   **اینستاگرام:** [instagram.com/ehsanrashidi.dev](https://www.instagram.com/ehsanrashidi.dev)
+-   **لینکدین:** [linkedin.com/in/ehsanabdoalrashidi](https://www.linkedin.com/in/ehsanabdoalrashidi)
+-   **واتساپ:** [wa.me/989134562731](https://wa.me/989134562731)
+-   **وبسایت:** [ehsanrashidi.ir](https://ehsanrashidi.ir/)
+
 ## نصب پروژه کامل
 
 ۱. ابتدا Node.js را نصب کنید (در صورت نیاز).
@@ -52,12 +63,6 @@ function MyComponent() {
         </div>
     );
 }
-```
-
-۳. فراموش نکنید فایل `index.css` مربوط به لودینگ را نیز در پروژه خود ایمپورت کنید:
-
-```js
-import "./components/loading/index.css";
 ```
 
 ---
